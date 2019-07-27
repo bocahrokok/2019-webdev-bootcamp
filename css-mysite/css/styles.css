@@ -1,11 +1,22 @@
 body {
     margin: 0px;
     text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 h1 {
+    font-size: 200%;
     margin: 0 auto 0 auto;
     width: 50%;
+    font-family: 'Farro', sans-serif;
+}
+
+h2 {
+    font-family: 'Asap', sans-serif;
+}
+
+h3 {
+    font-family: 'Asap', sans-serif;
 }
 
 .bottom-cloud {
@@ -14,14 +25,18 @@ h1 {
     bottom: 300px;
 }
 
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
 .top-container {
     background-color: #c7f0db;
     position: relative;
     padding-top: 100px;
 }
 
-.top-cloud {
-    position: absolute;
-    right: 300px;
-    top: 50px;
-}
+.middle-container {}
+
+.bottom-container {}
