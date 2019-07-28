@@ -28,6 +28,12 @@ a {
     color: #11999E;
 }
 
+.nurrizkyimg {
+    margin-top: 100px;
+    width: 10%;
+    border-radius: 50%;
+}
+
 .skill-row {
     line-height: 2;
     margin: 100px auto 100px auto;
@@ -63,8 +69,4 @@ a {
     background-color: #c7f0db;
     position: relative;
     padding-top: 100px;
-}
-
-.code-skill-description {
-    clear: left;
 }
