@@ -16,6 +16,11 @@ app.get("/about", function(req, res){
     res.send("Nurrizky Imani is Awesome guy & really good boye");
 });
 
+app.get("/resume", function(req, res){
+    res.send("He doesnt have any capability");
+});
+
 app.listen(3000, function(){
     console.log("Server started on port 3000");
 });
+ 
