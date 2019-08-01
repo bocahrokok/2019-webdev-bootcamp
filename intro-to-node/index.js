@@ -6,7 +6,7 @@
 
  console.log(mySuperheroName);
 
- var supervillains = required("supervillains");
+ var supervillains = require("supervillains");
 
  var mySupervillainName = supervillains.random();
 
