@@ -5,8 +5,15 @@ const express = require("express");
 const app = express();
 
 app.get("/", function(req,res){
-    Response.send("<h1>Hello, world!</h1>");
+    res.send("<h1>Hello, world!</h1>");
+});
 
+app.get("/contact", function(req, res){
+    res.send("Contact me at Nurrizkyimani");
+});
+
+app.get("/about", function(req, res){
+    res.send("Nurrizky Imani is Awesome guy & really good boye");
 });
 
 app.listen(3000, function(){
