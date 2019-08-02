@@ -26,6 +26,21 @@ app.post("/", function(req, res){
     res.send("The result of the calculation is " + result);
 });
 
+app.get("/bmicalculator", function(req,res){
+    res.sendFile(__dirname+ "/bmiCalculator.html");
+});
+
+app.post("/bmicalculator", function(req, res){
+    var wei = parseFloat(req.body.weight);
+    var hei = parseFloat(req.body.height);
+
+    var bmi = wei/ hei*hei;
+
+    res.send("your bmi is " + bmi);
+
+});
+
+
 
 
 app.listen(4000, function(){
