@@ -24,16 +24,18 @@ app.post("/", function(req, res){
     request("finalURL", function(error, response, body){
 
         var data = JSON.parse(body);
-        var price = data.averages.week;
+        var price = data.last
 
-        res.send("<h1> The current price of "+ crypto + " is " + price +  "USD </h1>");
+        var currentDate = data.display_timestamp;
+
+        res.write()
+
+        res.send("<h1> The current price of "+ crypto + " is " + price + fiat + "</h1>");
 
     });
     
     
 });
-
-
 app.listen(3000, function(req, res){
     console.log("asu bajingan 3000");
 });
