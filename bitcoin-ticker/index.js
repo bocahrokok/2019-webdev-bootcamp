@@ -17,25 +17,40 @@ app.post("/", function(req, res){
     var crypto = req.body.crypto;
     var fiat = req.body.fiat;
 
-    var baseURL = "https://apiv2.bitcoinaverage.com/indices/global/ticker/"
-    
-    var finalURL = baseURL + crypto + fiat;
+    var amount = req.body.amount;
 
-    request("finalURL", function(error, response, body){
+    var baseURL = "https://apiv2.bitcoinaverage.com/convert/global"
+
+
+    var options = {
+        url: baseURL,
+        method: "GET",
+        qs: {
+            from: crypto,
+            to: fiat,
+            amount: amount
+        }
+    }
+
+    request(options, function(error, response, body){
 
         var data = JSON.parse(body);
-        var price = data.last
+        var price = data.price;
 
-        var currentDate = data.display_timestamp;
+        console.log(price);
 
-        res.write()
+        var currentDate = data.time;
 
-        res.send("<h1> The current price of "+ crypto + " is " + price + fiat + "</h1>");
+        res.write("<p> the current date is " + currentDate + "</p>");
+
+        res.write("<h1>" amount + crypto + " is currently worth" + price + fiat + "</h1>");
+        
+        res.send();
+
+     });
 
     });
-    
-    
-});
+
 app.listen(3000, function(req, res){
-    console.log("asu bajingan 3000");
+    console.log("Server is running manx 3000");
 });
