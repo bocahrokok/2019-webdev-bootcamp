@@ -21,15 +21,30 @@ app.post("/", function(req, res){
     var lastName = req.body.lName;
     var email = req.body.email;
 
+    var data = {
+        members: [
+            {
+            email_address: email,
+            status:"subscribed",
+            merge_fields: {
+                FNAME: firstName,
+                LNAME: lastName,
+            }
+        }
+    ]
+ };
+
+    var jsonData = JSON.stringify(data);
+
+
     var options = {
         url: "https://us3.api.mailchimp.com/3.0/lists/ecf479bae5",
         method: "POST",
         headers: {
-            "Authorization": "indieunicreative acta 9f9fe9302b0c962e45de029ed5b2b570-us3"
-        }
-
-    }
-
+            "Authorization": "indieunicreative 9f9fe9302b0c962e45de029ed5b2b570-us3"
+        },
+        body: jsonData
+    };
 
     request(options, function(error, response, body){
         if (error){
@@ -38,8 +53,6 @@ app.post("/", function(req, res){
             console.log(response.statusCode);
         }
     });
-
-
 
 });
 
