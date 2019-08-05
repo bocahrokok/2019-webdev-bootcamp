@@ -40,8 +40,8 @@ app.get("/", function(req, res){
     }
 
     res.render("list", {
-        kindOfDay: day;
-    })
+        kindOfDay: day; 
+    });
 
     
 
