@@ -17,16 +17,27 @@ app.get("/", function(req,res){
 
 app.post("/", function(req, res){
     
-    var firstName =  res.body.fName;
-    var lastName = res.body.lName;
-    var email = res.body.email;
+    var firstName =  req.body.fName;
+    var lastName = req.body.lName;
+    var email = req.body.email;
 
-    console.log(firstName, lastName, email)
+    var option = {
+        url
+    }
+
+
+    request(options, function(error, response, body){
+
+    })
+
+
+
 });
 
 
+//ecf479bae5
 
-
+//9f9fe9302b0c962e45de029ed5b2b570-us3
 
 
 
