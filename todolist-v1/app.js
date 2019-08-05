@@ -11,7 +11,37 @@ app.get("/", function(req, res){
     var currentDay = today.getDay();
     var day = "";
 
-    
+    switch (currentDay) {
+        case value:
+            day = "sunday";
+            break;
+        case value:
+            day = "monday";
+            break;
+        case value:
+            day = "tuesday";
+            break;
+        case value:
+            day = "wednesday";
+            break;
+        case value:
+            day = "thursday";
+            break;
+        case value:
+            day = "friday";
+            break;
+        case value:
+            day = "sabtu";
+            break;
+
+        default:
+            console.log("Error: no day is equal to");
+            break;
+    }
+
+    res.render("list", {
+        kindOfDay: day;
+    })
 
     
 
