@@ -21,14 +21,20 @@ app.post("/", function(req, res){
     var lastName = req.body.lName;
     var email = req.body.email;
 
-    var option = {
-        url
+    var options1 = {
+        url: "https://us3.api.mailchimp.com/3.0/lists/ecf479bae5",
+        method: "POST",
+
     }
 
 
     request(options, function(error, response, body){
-
-    })
+        if (error){
+            console.log(error);   
+        } else {
+            console.log(response.statusCode);
+        }
+    });
 
 
 
