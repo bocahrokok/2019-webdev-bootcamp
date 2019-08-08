@@ -27,6 +27,10 @@ h1 {
 
 }
 
+h3{
+    
+}
+
 
 /* Navigation Bar */
 
@@ -64,4 +68,17 @@ h1 {
   .title-image{
       width: 60%;
       transform: rotate(25deg);
+  }
+
+
+  /* Features section */
+
+  #features{
+      padding: 7% 15%;
+
+  }
+
+  .feature-box{
+      text-align: center;
+      padding: 5%
   }
