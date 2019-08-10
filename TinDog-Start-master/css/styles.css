@@ -135,4 +135,16 @@ h3{
     margin: 20px 30px 50px;
 }
 
+/* PRICING SECTION */
+
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+
+
+.pricing-column {
+    padding: 3% 2% ;
+}
+
 
