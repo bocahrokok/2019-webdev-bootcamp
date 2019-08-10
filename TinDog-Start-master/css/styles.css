@@ -156,3 +156,11 @@ h3{
 }
 
 
+@media (max-width: 1028px) {
+
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+    
+}
