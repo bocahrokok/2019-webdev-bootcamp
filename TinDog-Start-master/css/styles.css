@@ -136,7 +136,12 @@ h3{
       padding-bottom: 3%;
 
   }
-
+  
+.social-icon{
+    margin: 20px 10px;
+    
+    
+}
 
 .press-logo{
     width: 15%;
@@ -158,6 +163,13 @@ h3{
 };
 
 
+
+
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+
+}
 
 #pricing{
     padding: 100px;
