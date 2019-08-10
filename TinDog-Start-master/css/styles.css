@@ -4,6 +4,30 @@ body {
     text-align: center;
   }
   
+h1,h2,h3,h4,h5 {
+    font-family: "Montserrat";
+
+}
+
+h2{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+big-heading{
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 4.5rem;
+    line-height: 1.0;
+    text-align: left
+}
 
 #title{
     background-color: #ff4c68;
@@ -17,23 +41,6 @@ body {
 
 .button1{
     width: 120px;
-    
-}
-
-h1 {
-    font-family: 'Montserrat-Black', sans-serif;
-    font-size: 4.5rem;
-    line-height: 1.0;
-    text-align: left
-
-}
-
-h2{
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
-h3{
     
 }
 
@@ -136,7 +143,7 @@ h3{
       padding-bottom: 3%;
 
   }
-  
+
 .social-icon{
     margin: 20px 10px;
     
