@@ -146,6 +146,19 @@ h3{
 /* PRICING SECTION */
 
 
+#cta{
+    background-color: #ff4c68;
+    padding: 7% 15%;
+}
+
+.cta-heading{
+  
+    font-size: 3.5rem; 
+    line-height: 1.5;
+};
+
+
+
 #pricing{
     padding: 100px;
     text-align: center;
@@ -158,20 +171,6 @@ h3{
 
 
 /* CTA SECTION */
-
-#cta{
-    background-color: #ff4c68;
-
-    padding: 7% 15%;
-    
-};
-
-
-.cta-heading{
-    font-family: "Monserrat-Black";
-    font-size: 3.5rem; 
-    line-height: 1.5;
-};
 
 
 
