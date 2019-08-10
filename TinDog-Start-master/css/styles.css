@@ -10,9 +10,6 @@ h1,h2,h3,h4,h5 {
 }
 
 
-h3{
-    font-size: 1.5rem;
-}
 
 p{
     color: #8f8f8f;
@@ -96,6 +93,10 @@ p{
     position: relative;
     z-index: 1;
 
+  }
+
+  .feature-title{
+      font-size: 1.5rem;
   }
 
   .feature-box{
