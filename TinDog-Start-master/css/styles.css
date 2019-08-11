@@ -184,6 +184,12 @@ p{
 #footer{
     padding: 7% 15%;
     text-align: center;
+text-align: center; 
+}
+
+
+#title{
+    background-color: #ff4c68;
 
 }
 
