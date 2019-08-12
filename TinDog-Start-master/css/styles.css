@@ -32,8 +32,8 @@ p{
     color: #fff;
 }
 
-.container-fluid{
-    padding: 7%  15% ;
+#title .container-fluid{
+    padding: 3% 7%  15% ;
     
 }
 
@@ -141,10 +141,6 @@ p{
   
 
 
-  .carousel-item{
-   padding: 7% 15%;
-
-  }
 
   #press{
       background-color: #ef8172;
@@ -182,7 +178,7 @@ p{
 
 
 #footer{
-    padding: 7% 15%;
+ 
     text-align: center;
 text-align: center; 
 }
