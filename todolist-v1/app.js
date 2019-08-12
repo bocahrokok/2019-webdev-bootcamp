@@ -5,6 +5,8 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
+app.use(bodyParser.urlencoded({extended: true}));
+
 app.get("/", function(req, res){
     
     var today = new Date();
@@ -17,9 +19,9 @@ app.get("/", function(req, res){
 
     var day  = today.toLocaleDateString("en-US", options);
 
-    
+
     res.render("list", {
-        kindOfDay: day; 
+        kindOfDay: day
     });
 
     
@@ -27,6 +29,10 @@ app.get("/", function(req, res){
     
 
 });
+
+app.post("/", function(req,res){
+    req.body.newItem
+})
 
 
 
